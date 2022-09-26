@@ -27,4 +27,13 @@ public class HelperBase {
         el.clear();
         el.sendKeys(text);
     }
+
+    public boolean isElementPresent(By locator){
+        return wd.findElements(locator).size()>0;
+    }
+
+    public void click(By locator){
+        wd.findElement(locator).click();
+    }
+
 }
