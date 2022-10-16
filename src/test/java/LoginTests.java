@@ -1,8 +1,14 @@
+import manager.DataProviderUser;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class LoginTests extends TestBase{
     @BeforeMethod
@@ -17,20 +23,36 @@ public class LoginTests extends TestBase{
     }
 
 
-    @Test
-    public void loginSuccess() {
-        logger.info("User login: marinas@gmail.com, Mmarina12345$");
+    @Test(dataProvider = "logindata", dataProviderClass = DataProviderUser.class)
+    public void loginSuccess(String email, String psw) {
+        //logger.info("User login: marinas@gmail.com, Mmarina12345$");
+        logger.info("User login: " + email +"" + psw);
+
         app.getHelperUser().openLoginFormHeader();
-        app.getHelperUser().fillLoginForm("marinas@gmail.com", "Mmarina12345$");
+        app.getHelperUser().fillLoginForm(email, psw);
         app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
         logger.info("ASSERT passed: 'Logged in success' msg is appear");
     }
 
+
+
     @Test
     public void loginSuccessModel() {
         User user = new User().withEmail("marinas@gmail.com").withPassword("Mmarina12345$");
+        logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
+
+        app.getHelperUser().openLoginFormHeader();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submit();
+
+        Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
+        logger.info("ASSERT passed: 'Logged in success' msg is appear");
+    }
+
+    @Test(dataProvider = "logindataModel", dataProviderClass = DataProviderUser.class)
+    public void loginSuccessModelDP(User user) {
         logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
 
         app.getHelperUser().openLoginFormHeader();
