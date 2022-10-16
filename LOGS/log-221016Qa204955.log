@@ -1,0 +1,280 @@
+20:49:57.332 INFO  manager.AppManager - Chrome driver was opened
+20:49:59.060 INFO  manager.AppManager - Current URL is ---> https://ilcarro-1578153671498.web.app/search
+20:49:59.093 INFO  TestBase - START TEST WITH NAME: addCarSuccess
+20:49:59.095 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:04.112 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:04.113 INFO  manager.ListenerWD - List size: 0
+20:50:04.115 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:04.139 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:04.186 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:04.205 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:04.302 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:04.320 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:04.394 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:04.412 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:04.451 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:05.022 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:05.023 INFO  manager.ListenerWD - List size: 1
+20:50:05.023 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:05.043 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:05.074 INFO  TestBase - User login: marinas@gmail.com Mmarina12345$
+20:50:05.589 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: 1
+20:50:05.617 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: 1
+20:50:05.674 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: pickUpPlace
+20:50:05.690 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: pickUpPlace
+20:50:05.797 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+20:50:06.194 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+20:50:06.734 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: make
+20:50:06.770 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: make
+20:50:06.865 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: model
+20:50:06.884 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: model
+20:50:06.968 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: year
+20:50:06.985 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: year
+20:50:07.084 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: engine
+20:50:07.101 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: engine
+20:50:07.201 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: fuel
+20:50:07.218 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: fuel
+20:50:07.290 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: gear
+20:50:07.310 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: gear
+20:50:07.392 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: wheelsDrive
+20:50:07.409 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: wheelsDrive
+20:50:07.476 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: doors
+20:50:07.504 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: doors
+20:50:07.611 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: seats
+20:50:07.631 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: seats
+20:50:07.733 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: class
+20:50:07.756 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: class
+20:50:07.854 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: fuelConsumption
+20:50:07.869 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: fuelConsumption
+20:50:07.975 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: serialNumber
+20:50:07.995 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: serialNumber
+20:50:08.091 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: price
+20:50:08.107 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: price
+20:50:08.200 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: distance
+20:50:08.215 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: distance
+20:50:08.317 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .feature-input
+20:50:08.334 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .feature-input
+20:50:08.419 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: about
+20:50:08.432 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: about
+20:50:08.530 INFO  TestBase - Car: Car(location=Haifa, Israel, make=BMW, model=M5, year=2020, engine=2.5, fuel=Petrol, gear=AT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsumption=6.5, carRegistrationNumber=11-000-601, price=65, distanceIncluded=800, features=Type of features, about=very nice car)
+20:50:08.531 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: photos
+20:50:08.546 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: photos
+20:50:08.588 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+20:50:08.606 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+20:50:09.733 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+20:50:09.759 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+20:50:09.808 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container
+20:50:11.246 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container
+20:50:11.267 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container>h1
+20:50:11.283 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container>h1
+20:50:11.299 INFO  TestBase - ASSERT passed: 'Car added' title message is appear 
+20:50:11.304 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Search cars']
+20:50:11.323 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Search cars']
+20:50:11.363 INFO  TestBase - START TEST WITH NAME: loginNegativeWrongEmail
+20:50:11.364 INFO  TestBase - Authorization check
+20:50:11.364 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:11.378 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:11.379 INFO  manager.ListenerWD - List size: 1
+20:50:11.379 INFO  TestBase - Authorized. Log out...
+20:50:11.379 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:11.395 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:11.512 INFO  TestBase - User login: marinasgmail.com Mmarina12345$
+20:50:11.512 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:11.526 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:11.568 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:11.582 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:11.686 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:11.700 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:11.773 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:11.782 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:11.804 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.error>div
+20:50:11.821 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.error>div
+20:50:11.833 INFO  TestBase - ASSERT passed: 'It'snot look like email' is appear
+20:50:11.833 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: button[disabled]
+20:50:11.855 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: button[disabled]
+20:50:11.855 INFO  manager.ListenerWD - List size: 1
+20:50:11.855 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [type='submit']
+20:50:11.872 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [type='submit']
+20:50:11.883 INFO  TestBase - ASSERT passed: 'isYallaButtonNotActive'
+20:50:11.886 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:16.908 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:16.908 INFO  manager.ListenerWD - List size: 0
+20:50:16.910 INFO  TestBase - START TEST WITH NAME: loginNegativeWrongPassword
+20:50:16.912 INFO  TestBase - Authorization check
+20:50:16.912 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:21.954 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:21.955 INFO  manager.ListenerWD - List size: 0
+20:50:21.955 INFO  TestBase - Not authorized
+20:50:21.957 INFO  TestBase - User login: marinas@gmail.com marina12345$
+20:50:21.958 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:21.981 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:22.016 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:22.031 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:22.104 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:22.114 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:22.174 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:22.185 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:22.208 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container
+20:50:22.542 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container
+20:50:22.567 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: h2.message
+20:50:22.585 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: h2.message
+20:50:22.599 INFO  TestBase - ASSERT passed: 'Wrong email or password' is appear
+20:50:22.599 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container
+20:50:22.619 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container
+20:50:22.638 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container>h1
+20:50:22.668 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container>h1
+20:50:22.679 INFO  TestBase - ASSERT passed: 'Authorization error' is appear
+20:50:22.680 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:22.700 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:22.701 INFO  manager.ListenerWD - List size: 1
+20:50:22.701 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:22.722 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:22.758 INFO  TestBase - START TEST WITH NAME: loginSuccess
+20:50:22.759 INFO  TestBase - Authorization check
+20:50:22.759 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:27.795 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:27.795 INFO  manager.ListenerWD - List size: 0
+20:50:27.795 INFO  TestBase - Not authorized
+20:50:27.796 INFO  TestBase - User login: marinas@gmail.com, Mmarina12345$
+20:50:27.797 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:27.820 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:27.851 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:27.861 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:27.925 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:27.937 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:28.009 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:28.019 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:28.037 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container
+20:50:28.421 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container
+20:50:28.435 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: h2.message
+20:50:28.449 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: h2.message
+20:50:28.464 INFO  TestBase - ASSERT passed: 'Logged in success' msg is appear
+20:50:28.465 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:28.486 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:28.486 INFO  manager.ListenerWD - List size: 1
+20:50:28.486 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:28.505 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:28.541 INFO  TestBase - START TEST WITH NAME: loginSuccessModel
+20:50:28.542 INFO  TestBase - Authorization check
+20:50:28.542 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:28.558 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:28.559 INFO  manager.ListenerWD - List size: 1
+20:50:28.559 INFO  TestBase - Authorized. Log out...
+20:50:28.559 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:28.577 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:28.624 INFO  TestBase - User login: marinas@gmail.com Mmarina12345$
+20:50:28.624 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:28.640 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href ^='/login']
+20:50:28.676 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:28.691 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:28.801 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:28.812 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:28.896 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:28.905 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:28.934 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container
+20:50:29.444 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container
+20:50:29.465 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: h2.message
+20:50:29.483 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: h2.message
+20:50:29.498 INFO  TestBase - ASSERT passed: 'Logged in success' msg is appear
+20:50:29.499 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:29.512 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:29.513 INFO  manager.ListenerWD - List size: 1
+20:50:29.513 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:29.527 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:29.560 INFO  TestBase - START TEST WITH NAME: regstrSuccess
+20:50:29.560 INFO  TestBase - Authorization check
+20:50:29.560 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:29.571 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:29.571 INFO  manager.ListenerWD - List size: 1
+20:50:29.571 INFO  TestBase - Authorized. Log out...
+20:50:29.572 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:29.583 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:29.626 INFO  TestBase - User login: sa3029@gmail.com Sa12345$
+20:50:29.626 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text()=' Sign up ']
+20:50:29.643 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text()=' Sign up ']
+20:50:29.685 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'name']
+20:50:29.701 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'name']
+20:50:29.783 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'lastName']
+20:50:29.796 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'lastName']
+20:50:29.870 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:29.880 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:29.981 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:29.990 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:30.069 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: label[for='terms-of-use']
+20:50:30.082 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: label[for='terms-of-use']
+20:50:30.220 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:30.232 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[contains(text(),'alla!')]
+20:50:30.268 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container
+20:50:30.720 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container
+20:50:30.733 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.dialog-container>h1
+20:50:30.750 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.dialog-container>h1
+20:50:30.766 INFO  TestBase - ASSERT passed: 'Registered' msg is appear
+20:50:30.767 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:30.781 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:30.782 INFO  manager.ListenerWD - List size: 1
+20:50:30.782 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:30.793 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Ok']
+20:50:30.830 INFO  TestBase - START TEST WITH NAME: regstrWrongEmail
+20:50:30.831 INFO  TestBase - Authorization check
+20:50:30.831 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:30.847 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:30.848 INFO  manager.ListenerWD - List size: 1
+20:50:30.848 INFO  TestBase - Authorized. Log out...
+20:50:30.848 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:30.866 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text() = ' Logout ']
+20:50:30.909 INFO  TestBase - User login: sagmail.com Sa12345$
+20:50:30.909 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text()=' Sign up ']
+20:50:30.925 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text()=' Sign up ']
+20:50:30.965 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'name']
+20:50:30.978 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'name']
+20:50:31.065 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'lastName']
+20:50:31.076 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'lastName']
+20:50:31.161 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:31.174 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:31.286 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:31.297 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:31.374 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: label[for='terms-of-use']
+20:50:31.386 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: label[for='terms-of-use']
+20:50:31.531 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.error>div
+20:50:31.549 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.error>div
+20:50:31.562 INFO  TestBase - ASSERT passed: 'Wrong email format' is appear
+20:50:31.562 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: button[disabled]
+20:50:31.577 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: button[disabled]
+20:50:31.577 INFO  manager.ListenerWD - List size: 1
+20:50:31.577 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [type='submit']
+20:50:31.594 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [type='submit']
+20:50:31.603 INFO  TestBase - ASSERT passed: isYallaButtonNotActive
+20:50:31.604 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:36.659 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:36.659 INFO  manager.ListenerWD - List size: 0
+20:50:36.661 INFO  TestBase - START TEST WITH NAME: regstrWrongPsw
+20:50:36.662 INFO  TestBase - Authorization check
+20:50:36.662 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:41.719 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //a[text() = ' Logout ']
+20:50:41.719 INFO  manager.ListenerWD - List size: 0
+20:50:41.719 INFO  TestBase - Not authorized
+20:50:41.721 INFO  TestBase - User login: sa@gmail.com Sa
+20:50:41.721 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[text()=' Sign up ']
+20:50:41.744 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[text()=' Sign up ']
+20:50:41.787 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'name']
+20:50:41.795 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'name']
+20:50:41.850 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'lastName']
+20:50:41.858 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'lastName']
+20:50:41.916 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:41.924 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'email']
+20:50:41.985 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:41.994 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@id = 'password']
+20:50:42.058 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: label[for='terms-of-use']
+20:50:42.066 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: label[for='terms-of-use']
+20:50:42.202 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.error>div
+20:50:42.212 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.error>div
+20:50:42.224 INFO  TestBase - ASSERT passed: error text is appear
+20:50:42.224 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: button[disabled]
+20:50:42.235 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: button[disabled]
+20:50:42.235 INFO  manager.ListenerWD - List size: 1
+20:50:42.235 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [type='submit']
+20:50:42.251 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [type='submit']
+20:50:42.259 INFO  TestBase - ASSERT passed: isYallaButtonNotActive
+20:50:42.260 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:47.310 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Ok']
+20:50:47.310 INFO  manager.ListenerWD - List size: 0
