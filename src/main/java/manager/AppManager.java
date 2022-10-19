@@ -13,6 +13,7 @@ public class AppManager {
     WebDriver wd;
     HelperUser helperUser;
     HelperCar helperCar;
+    HelperSearch helperSearch;
     Logger logger = LoggerFactory.getLogger(AppManager.class);
 
     public void init(){
@@ -26,12 +27,13 @@ public class AppManager {
         wd.navigate().to("https://ilcarro-1578153671498.web.app");
         logger.info("Current URL is ---> " + wd.getCurrentUrl());
 
-        helperUser = new HelperUser(wd);
-        helperCar  = new HelperCar(wd);
+        helperUser   = new HelperUser(wd);
+        helperCar    = new HelperCar(wd);
+        helperSearch = new HelperSearch(wd);
 
     }
     public void stop(){
-        wd.quit();
+        //wd.quit();
     }
 
     public HelperUser getHelperUser() {
@@ -40,5 +42,9 @@ public class AppManager {
 
     public HelperCar HelperCar() {
         return helperCar;
+    }
+
+    public HelperSearch getHelperSearch() {
+        return helperSearch;
     }
 }

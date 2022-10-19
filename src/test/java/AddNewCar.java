@@ -1,3 +1,4 @@
+import manager.DataProviderCar;
 import models.Car;
 import models.User;
 import org.testng.Assert;
@@ -51,6 +52,20 @@ public class AddNewCar extends TestBase{
         Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Car added");
         logger.info("ASSERT passed: 'Car added' title message is appear ");
     }
+
+    @Test (dataProvider = "carValidData",dataProviderClass = DataProviderCar.class)
+    public void addCarSuccessDP(Car car){
+
+        app.HelperCar().openCarForm();
+        app.HelperCar().fillCarForm(car);
+        logger.info("Car: " + car.toString());
+
+        app.HelperCar().attachPhoto("C:\\QA35-Automation\\Qa35_ilCarro\\src\\main\\resources\\car-photo.jpg");
+        app.HelperCar().submit();
+        Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Car added");
+        logger.info("ASSERT passed: 'Car added' title message is appear ");
+    }
+
 
     @AfterMethod
     public void posCondition(){

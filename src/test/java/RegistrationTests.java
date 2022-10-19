@@ -1,7 +1,9 @@
+import manager.DataProviderUser;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase{
@@ -17,10 +19,22 @@ public class RegistrationTests extends TestBase{
             logger.info("Not authorized");
     }
 
-    @Test
     public void regstrSuccess(){
         int i = (int)(System.currentTimeMillis()/1000)%3600;
         User user = new User().withName("Sasha").withLastName("Sasha").withEmail("sa" + i + "@gmail.com").withPassword("Sa12345$");
+        logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
+
+        app.getHelperUser().openRegstrFormFromHeader();
+        app.getHelperUser().fillRegstrForm(user);
+        app.getHelperUser().CheckPolicyXY();
+        app.getHelperUser().submit();
+
+        Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Registered");
+        logger.info("ASSERT passed: 'Registered' msg is appear");
+    }
+
+    @Test(dataProvider ="regDataValid", dataProviderClass = DataProviderUser.class)
+    public void regstrSuccessDP(User user){
         logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
 
         app.getHelperUser().openRegstrFormFromHeader();
