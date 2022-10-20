@@ -42,6 +42,7 @@ public class DataProviderCar {
             line= reader.readLine();
 
         }
+        reader.close();
 
         return list.iterator();
     }

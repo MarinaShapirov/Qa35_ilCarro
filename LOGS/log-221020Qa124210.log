@@ -1,0 +1,44 @@
+12:42:13.298 INFO  manager.AppManager - Chrome driver was opened
+12:42:16.373 INFO  manager.AppManager - Current URL is ---> https://ilcarro-1578153671498.web.app/search
+12:42:16.460 INFO  TestBase - START TEST WITH NAME: searchCurrentMonth
+12:42:16.467 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: city
+12:42:16.521 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: city
+12:42:16.657 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+12:42:17.145 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+12:42:17.695 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [formcontrolname = 'dates'
+12:42:17.747 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [formcontrolname = 'dates'
+12:42:17.862 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 25 ']
+12:42:17.895 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 25 ']
+12:42:17.952 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 30 ']
+12:42:17.992 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 30 ']
+12:42:18.058 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+12:42:18.089 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+12:42:18.155 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+12:42:18.187 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+12:42:18.278 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .car-card
+12:42:19.580 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .car-card
+12:42:19.581 INFO  manager.ListenerWD - List size: 10
+12:42:19.588 INFO  TestBase - ASSERT passed: 'Car count > 0
+12:42:19.598 INFO  TestBase - START TEST WITH NAME: searchNextMonth
+12:42:19.600 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: city
+12:42:19.630 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: city
+12:42:19.810 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+12:42:20.106 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+12:42:20.682 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [formcontrolname = 'dates'
+12:42:20.719 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [formcontrolname = 'dates'
+12:42:20.838 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+12:42:20.883 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+12:42:20.959 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+12:42:20.987 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+12:42:21.091 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 25 ']
+12:42:21.125 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 25 ']
+12:42:21.214 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 30 ']
+12:42:21.254 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 30 ']
+12:42:21.340 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+12:42:21.586 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+12:42:21.673 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+12:42:21.706 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+12:42:21.790 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .car-card
+12:42:22.884 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .car-card
+12:42:22.885 INFO  manager.ListenerWD - List size: 10
+12:42:22.885 INFO  TestBase - ASSERT passed: 'Car count > 0

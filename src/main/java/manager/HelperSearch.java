@@ -3,6 +3,7 @@ package manager;
 import com.sun.jdi.IntegerType;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.time.LocalDate;
 
@@ -13,14 +14,14 @@ public class HelperSearch extends HelperBase{
 
     public void searchCurrentMonth(String city, String dateFrom, String dateTo) {
         typeCity(city);
-        click(By.id("dates"));
+        click(By.cssSelector("[formcontrolname = 'dates'"));
         typeDate(dateFrom);
         typeDate(dateTo);
     }
 
     public void searchNextMonth(String city, String dateFrom, String dateTo) {
         typeCity(city);
-        click(By.id("dates"));
+        click(By.cssSelector("[formcontrolname = 'dates'"));
         //set month
         String[] dFrom = dateFrom.split("/");
         String[] dTo = dateTo.split("/");
@@ -31,6 +32,14 @@ public class HelperSearch extends HelperBase{
         click(By.xpath(locator));
         locator = String.format("//div[text()= ' %s ']", dTo[1]);
         click(By.xpath(locator));
+    }
+
+    public boolean carsSearchRes(){
+        boolean res = false;
+        int cnt = wd.findElements(By.cssSelector(".car-card")).size();
+        if(cnt>0)
+            res = true;
+        return res;
     }
 
     private void typeCity(String city) {
@@ -54,4 +63,6 @@ public class HelperSearch extends HelperBase{
             for(int i=0; i<diff; i++)
                 click(By.cssSelector("button[aria-label = 'Next month']"));
     }
+
+
 }

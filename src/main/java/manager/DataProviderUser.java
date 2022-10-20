@@ -47,8 +47,7 @@ public class DataProviderUser {
             list.add(new Object[]{new User().withName(split[0]).withLastName(split[1]).withEmail(split[2]).withPassword(split[3])});
             line =reader.readLine();  // null
         }
-
-
+        reader.close();
         return list.iterator();
     }
 }
