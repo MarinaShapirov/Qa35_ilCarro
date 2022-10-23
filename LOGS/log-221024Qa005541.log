@@ -1,0 +1,80 @@
+00:55:43.241 INFO  manager.AppManager - Chrome driver was opened
+00:55:44.773 INFO  manager.AppManager - Current URL is ---> https://ilcarro-1578153671498.web.app/search
+00:55:44.812 INFO  TestBase - START TEST WITH NAME: searchAnyPeriod
+00:55:44.814 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: city
+00:55:44.838 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: city
+00:55:45.942 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+00:55:46.273 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+00:55:46.309 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [formcontrolname = 'dates']
+00:55:46.324 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [formcontrolname = 'dates']
+00:55:46.973 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+00:55:46.996 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+00:55:47.035 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+00:55:47.053 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+00:55:47.094 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+00:55:47.116 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[aria-label = 'Next month']
+00:55:47.150 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 10 ']
+00:55:47.167 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 10 ']
+00:55:47.208 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 15 ']
+00:55:47.227 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 15 ']
+00:55:47.273 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+00:55:47.291 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+00:55:47.323 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+00:55:47.337 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+00:55:47.396 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .car-card
+00:55:48.383 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .car-card
+00:55:48.384 INFO  manager.ListenerWD - List size: 10
+00:55:48.386 INFO  TestBase - ASSERT passed: 'Car count > 0
+00:55:48.390 INFO  TestBase - START TEST WITH NAME: searchCurrentMonth
+00:55:48.390 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: city
+00:55:48.406 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: city
+00:55:49.554 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+00:55:49.570 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+00:55:49.604 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [formcontrolname = 'dates']
+00:55:49.615 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [formcontrolname = 'dates']
+00:55:50.236 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 28 ']
+00:55:50.257 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 28 ']
+00:55:50.309 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //div[text()= ' 30 ']
+00:55:50.325 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //div[text()= ' 30 ']
+00:55:50.368 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+00:55:50.379 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+00:55:50.401 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: button[type='submit']
+00:55:50.413 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: button[type='submit']
+00:55:50.452 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .car-card
+00:55:51.189 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .car-card
+00:55:51.189 INFO  manager.ListenerWD - List size: 10
+00:55:51.189 INFO  TestBase - ASSERT passed: 'Car count > 0
+00:55:51.191 INFO  TestBase - START TEST WITH NAME: searchNextMonth
+00:55:51.191 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: city
+00:55:51.207 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: city
+00:55:52.349 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+00:55:52.362 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+00:55:52.591 INFO  manager.ListenerWD - Error, method: click
+00:55:52.599 INFO  manager.ListenerWD - Error, get cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-HLIIH7LJ', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0c135becb7ebd971757a4a987860aad, clickElement {id=daeb1d75-9a6b-439a-be84-d77a94823dff}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\marin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49188/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c0c135becb7ebd971757a4a987860aad)] -> css selector: div.pac-item]
+Session ID: c0c135becb7ebd971757a4a987860aad
+00:55:52.600 INFO  manager.ListenerWD - Error, screenshot: src/test/ScreenShot/1879.png
+00:55:52.609 INFO  TestBase - START TEST WITH NAME: typePeriodInPast
+00:55:52.610 INFO  manager.ListenerWD - BeforeFindElement by ---> By.id: city
+00:55:52.628 INFO  manager.ListenerWD - AfterFindElement by ---> By.id: city
+00:55:53.770 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: div.pac-item
+00:55:53.786 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: div.pac-item
+00:55:53.949 INFO  manager.ListenerWD - Error, method: click
+00:55:53.949 INFO  manager.ListenerWD - Error, get cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-HLIIH7LJ', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0c135becb7ebd971757a4a987860aad, clickElement {id=73b2a010-d908-41d7-8fa8-c588ebcc4a3d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\marin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49188/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c0c135becb7ebd971757a4a987860aad)] -> css selector: div.pac-item]
+Session ID: c0c135becb7ebd971757a4a987860aad
+00:55:53.950 INFO  manager.ListenerWD - Error, screenshot: src/test/ScreenShot/1587.png

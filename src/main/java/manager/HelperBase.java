@@ -36,7 +36,9 @@ public class HelperBase {
             return;
         WebElement el = wd.findElement(locator);
         el.click();
+        pause(500);
         el.clear();
+        pause(500);
         el.sendKeys(text);
     }
 
