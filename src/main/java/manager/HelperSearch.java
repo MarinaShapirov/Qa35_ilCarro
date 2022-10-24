@@ -95,10 +95,10 @@ public class HelperSearch extends HelperBase{
         String period = dateFrom + "-" + dateTo;
         el.sendKeys(period);
         el.click();
-        clickOnSearchContainer();
+        closeDatePickerWithoutDateSetting();
     }
 
-    public void clickOnSearchContainer() {
+    public void closeDatePickerWithoutDateSetting() {
         Actions action= new Actions(wd);
         WebElement container = wd.findElement(By.cssSelector(".search-container"));
         Rectangle rect = container.getRect();
