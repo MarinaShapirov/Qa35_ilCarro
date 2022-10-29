@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 public class AddNewCar extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         logger.info("Authorization check");
         if(!app.getHelperUser().isLogged()) {
@@ -20,7 +20,7 @@ public class AddNewCar extends TestBase{
         else
             logger.info("Authorized.");
     }
-    @Test
+    @Test(groups = {"smoke_group", "sanity_group"})
     public void addCarSuccess(){
         Random random = new Random();
         int i = random.nextInt(1000)+100;
@@ -53,7 +53,7 @@ public class AddNewCar extends TestBase{
         logger.info("ASSERT passed: 'Car added' title message is appear ");
     }
 
-    @Test (dataProvider = "carValidData",dataProviderClass = DataProviderCar.class)
+    @Test (enabled = true, dataProvider = "carValidData",dataProviderClass = DataProviderCar.class)
     public void addCarSuccessDP(Car car){
 
         app.HelperCar().openCarForm();
@@ -67,7 +67,7 @@ public class AddNewCar extends TestBase{
     }
 
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void posCondition(){
         app.HelperCar().returnToHomePage();
     }

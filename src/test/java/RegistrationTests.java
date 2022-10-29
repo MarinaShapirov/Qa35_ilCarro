@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         logger.info("Authorization check");
         if (app.getHelperUser().isLogged()) {
@@ -18,6 +18,7 @@ public class RegistrationTests extends TestBase{
         else
             logger.info("Not authorized");
     }
+
 
     public void regstrSuccess(){
         int i = (int)(System.currentTimeMillis()/1000)%3600;
@@ -33,7 +34,7 @@ public class RegistrationTests extends TestBase{
         logger.info("ASSERT passed: 'Registered' msg is appear");
     }
 
-    @Test(dataProvider ="regDataValid", dataProviderClass = DataProviderUser.class)
+    @Test(enabled = false, dataProvider ="regDataValid", dataProviderClass = DataProviderUser.class)
     public void regstrSuccessDP(User user){
         logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
 
@@ -46,7 +47,7 @@ public class RegistrationTests extends TestBase{
         logger.info("ASSERT passed: 'Registered' msg is appear");
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void regstrWrongEmail(){
 
         User user = new User().withName("Sasha").withLastName("Sasha").withEmail("sagmail.com").withPassword("Sa12345$");
@@ -79,7 +80,7 @@ public class RegistrationTests extends TestBase{
         logger.info("ASSERT passed: isYallaButtonNotActive");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
 
         app.getHelperUser().clickOkButton();

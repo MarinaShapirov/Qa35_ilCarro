@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class LoginTests extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         logger.info("Authorization check");
         if (app.getHelperUser().isLogged()) {
@@ -25,7 +25,6 @@ public class LoginTests extends TestBase{
 
     @Test(dataProvider = "logindata", dataProviderClass = DataProviderUser.class)
     public void loginSuccess(String email, String psw) {
-        //logger.info("User login: marinas@gmail.com, Mmarina12345$");
         logger.info("User login: " + email +"" + psw);
 
         app.getHelperUser().openLoginFormHeader();
@@ -38,7 +37,7 @@ public class LoginTests extends TestBase{
 
 
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void loginSuccessModel() {
         User user = new User().withEmail("marinas@gmail.com").withPassword("Mmarina12345$");
         logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
@@ -96,7 +95,7 @@ public class LoginTests extends TestBase{
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
 
         app.getHelperUser().clickOkButton();

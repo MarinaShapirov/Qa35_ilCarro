@@ -22,11 +22,10 @@ public class HelperSearch extends HelperBase{
 
     public void searchCurrentMonth(String city, String dateFrom, String dateTo) {
         typeCity(city);
-        //clear dates
-        WebElement el = wd.findElement(By.cssSelector("[formcontrolname = 'dates']"));
-        clear(el);
+        //clear dates text box
+        clearDatesTextBox();
         //call date-picker
-        el.click();
+        click(By.id("dates"));
         //enter dates
         typeDate(dateFrom);
         typeDate(dateTo);
@@ -36,10 +35,10 @@ public class HelperSearch extends HelperBase{
      public void searchNextMonth(String city, String dateFrom, String dateTo) {
         typeCity(city);
         //clear dates
-        WebElement el = wd.findElement(By.cssSelector("[formcontrolname = 'dates']"));
-        clear(el);
+         WebElement el = wd.findElement(By.id("dates"));
+         clearDatesTextBox();
         //call date-picker
-        el.click();
+        click(By.id("dates"));
         //enter dates
         //set month
         String[] dFrom = dateFrom.split("/");
@@ -58,10 +57,9 @@ public class HelperSearch extends HelperBase{
 
         typeCity(city);
         //clear 'dates'
-        WebElement el = wd.findElement(By.cssSelector("[formcontrolname = 'dates']"));
-        clear(el);
+        clearDatesTextBox();
         //call date-picker
-        el.click();
+        click(By.id("dates"));
         //enter dates
         LocalDate ld     = LocalDate.now();
         LocalDate ldFrom = LocalDate.parse(dateFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
@@ -90,21 +88,16 @@ public class HelperSearch extends HelperBase{
     public void typePeriodInPast(String city, String dateFrom, String dateTo) {
         typeCity(city);
         //clear 'dates'
-        WebElement el = wd.findElement(By.cssSelector("[formcontrolname = 'dates']"));
-        clear(el);
-        String period = dateFrom + "-" + dateTo;
+        clearDatesTextBox();
+        String period = dateFrom + " - " + dateTo;
+        WebElement el = wd.findElement(By.id("dates"));
         el.sendKeys(period);
         el.click();
         closeDatePickerWithoutDateSetting();
     }
 
     public void closeDatePickerWithoutDateSetting() {
-        Actions action= new Actions(wd);
-        WebElement container = wd.findElement(By.cssSelector(".search-container"));
-        Rectangle rect = container.getRect();
-        int x = rect.getX()+1;
-        int y = rect.getY()+1;
-        action.moveByOffset(x,y).click().perform();
+        click(By.cssSelector(".cdk-overlay-container"));
     }
 
 
@@ -120,17 +113,28 @@ public class HelperSearch extends HelperBase{
         return res;
     }
 
-    private void clear(WebElement el) {
-        el.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+    private void clearDatesTextBox() {
+        WebElement el = wd.findElement(By.id("dates"));
+        String osName = System.getProperty("os.name");
+        logger.info("The OS is : "+ osName);
+        if(osName.startsWith("Mac"))
+        {
+            //command +a
+            el.sendKeys(Keys.chord(Keys.COMMAND,"a"));
+        }
+        else
+        {
+            //Ctrl +a
+            el.sendKeys(Keys.chord(Keys.CONTROL,"a"));
+        }
         el.sendKeys(Keys.DELETE);
-        pause(500);
+
     }
 
     private void typeCity(String city) {
         type(By.id("city"), city);
-        WebElement el = new WebDriverWait(wd, Duration.ofSeconds(5))
-                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.pac-item")));
-        el.click();
+        pause(500);
+        click(By.cssSelector("div.pac-item"));
     }
 
 
@@ -173,5 +177,9 @@ public class HelperSearch extends HelperBase{
                 res = true;
         }
         return res;
+    }
+
+    public void clickLogo() {
+        click(By.cssSelector(".header a.logo"));
     }
 }

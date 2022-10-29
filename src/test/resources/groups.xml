@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite4" verbose="1" >
+    <test name="Smoke group: All tests" >
+        <groups>
+            <run>
+                <include name="smoke_group"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="RegistrationTests" />
+            <class name="LoginTests" />
+            <class name="AddNewCar" />
+            <class name="SearchTests" />
+        </classes>
+    </test>
+
+</suite>

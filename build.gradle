@@ -24,3 +24,51 @@ dependencies {
 test {
     useTestNG();
 }
+task carro(type: Test)
+{
+    useTestNG() {
+        def suite = System.getProperty('suite', '')
+        def groups = System.getProperty('groups')
+        if (groups != null) {
+            includeGroups groups
+        }
+
+
+        if(suite.equals("testng"))
+        {
+            suites 'src/test/resources/testng.xml'
+        }
+        else if(suite.equals("car_tests"))
+        {
+            suites 'src/test/resources/car_tests.xml'
+        }else
+        {
+            suites 'src/test/resources/all_tests.xml'
+        }
+    }
+    if(project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
+
+task task2(type: Test)
+{
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+
+    }
+    if(project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
+
+task groupTask(type: Test)
+{
+    useTestNG() {
+        suites 'src/test/resources/groups.xml'
+
+    }
+    if(project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
